@@ -14,11 +14,9 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('users', App\Http\Controllers\Api\UserController::class);
 });
 
-
 Route::apiResource('users', UserController::class);
 
-Route::get('categories/{id}/books', [BookController::class, 'getBooksByCategory']);
 Route::get('categories-with-books', [CategoryController::class, 'indexWithBooks']);
+Route::apiResource('categories', CategoryController::class);
 
-Route::apiResource('categories', UserController::class);
-Route::apiResource('books', UserController::class);
+Route::apiResource('books', BookController::class);
