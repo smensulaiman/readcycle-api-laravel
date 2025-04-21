@@ -21,23 +21,27 @@ class BookController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request): JsonResponse
     {
         $validator = Validator::make($request->all(), [
-            'title'       => 'required|string|max:255',
-            'image_url'   => 'nullable|url',
+            'user_id'     => 'required|exists:users,id',
             'category_id' => 'required|exists:categories,id',
+            'title'       => 'required|string|max:255',
+            'description' => 'nullable|string',
+            'photo_path'  => 'nullable|url',
         ]);
 
         if ($validator->fails()) {
             return response()->json([
                 'status'  => false,
-                'message' => 'Validation errors',
+                'message' => 'Validation failed',
                 'errors'  => $validator->errors(),
             ], 422);
         }
 
-        $book = Book::create($request->only('title', 'image_url', 'category_id'));
+        $book = Book::create($request->only([
+            'user_id', 'category_id', 'title', 'description', 'photo_path'
+        ]));
 
         return response()->json([
             'status'  => true,

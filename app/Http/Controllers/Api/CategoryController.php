@@ -12,9 +12,15 @@ class CategoryController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(): JsonResponse
     {
-        //
+        $categories = Category::all();
+
+        return response()->json([
+            'status'  => true,
+            'message' => 'Category list fetched successfully',
+            'data'    => $categories,
+        ]);
     }
 
     /**
