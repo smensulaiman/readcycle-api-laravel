@@ -241,30 +241,6 @@
             overflow: hidden;
         }
 
-        .stats-card::before {
-            content: '';
-            position: absolute;
-            top: -20px;
-            right: -20px;
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, rgba(10, 109, 58, 0.1), rgba(53, 135, 91, 0.05));
-            border-radius: 50%;
-            z-index: 1;
-        }
-
-        .stats-card::after {
-            content: '';
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, rgba(10, 109, 58, 0.15), rgba(53, 135, 91, 0.08));
-            border-radius: 50%;
-            z-index: 2;
-        }
-
         .stats-card .icon,
         .stats-card h3,
         .stats-card p {
