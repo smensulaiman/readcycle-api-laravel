@@ -32,7 +32,7 @@
             font-style: normal;
             font-display: swap;
         }
-        
+
         :root {
             --primary: #0a6d3a;
             --primary-foreground: #ffffff;
@@ -125,11 +125,11 @@
             border-radius: var(--radius);
             box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
         }
-        
+
         .card-title {
             font-family: var(--bangla-font) !important;
         }
-        
+
         .card-header h5,
         .card-header .card-title {
             font-family: var(--bangla-font) !important;
@@ -240,7 +240,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .stats-card::before {
             content: '';
             position: absolute;
@@ -252,7 +252,7 @@
             border-radius: 50%;
             z-index: 1;
         }
-        
+
         .stats-card::after {
             content: '';
             position: absolute;
@@ -264,7 +264,7 @@
             border-radius: 50%;
             z-index: 2;
         }
-        
+
         .stats-card .icon,
         .stats-card h3,
         .stats-card p {
@@ -307,31 +307,31 @@
             .sidebar {
                 transform: translateX(-100%);
             }
-            
+
             .sidebar.show {
                 transform: translateX(0);
             }
-            
+
             .main-content {
                 margin-left: 0;
             }
         }
-        
+
         /* Bangla Font Classes */
         .bangla-font {
             font-family: var(--bangla-font) !important;
         }
-        
+
         .bangla-text {
             font-family: var(--bangla-font) !important;
             line-height: 1.6;
         }
-        
+
             /* Apply Bangla font to body */
             body {
                 font-family: var(--bangla-font);
             }
-            
+
             /* Book Cover Aspect Ratio Fix - 260x372 ratio (0.699:1) */
             .book-cover {
                 width: 100%;
@@ -339,16 +339,16 @@
                 object-fit: cover;
                 object-position: center;
             }
-            
+
             .book-card {
                 transition: transform 0.2s ease, box-shadow 0.2s ease;
             }
-            
+
             .book-card:hover {
                 transform: translateY(-2px);
                 box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             }
-            
+
             /* Table Image Fixes - maintaining 260x372 aspect ratio */
             .table-book-image {
                 width: 40px;
@@ -357,7 +357,7 @@
                 object-position: center;
                 border-radius: 4px;
             }
-            
+
             .table-book-image-large {
                 width: 60px;
                 height: 86px; /* 60x86 maintains 260x372 aspect ratio (0.699:1) */
@@ -365,7 +365,7 @@
                 object-position: center;
                 border-radius: 4px;
             }
-            
+
             .swap-book-image {
                 width: 50px;
                 height: 72px; /* 50x72 maintains 260x372 aspect ratio (0.699:1) */
@@ -373,7 +373,7 @@
                 object-position: center;
                 border-radius: 4px;
             }
-            
+
             .swap-card-image {
                 width: 80px;
                 height: 115px; /* 80x115 maintains 260x372 aspect ratio (0.699:1) */
@@ -382,124 +382,124 @@
                 border-radius: 4px;
                 margin: 0 auto;
             }
-            
+
             /* Chart Styles */
             .chart-container {
                 position: relative;
                 height: 300px;
                 width: 100%;
             }
-            
+
             .chart-card {
                 transition: transform 0.2s ease, box-shadow 0.2s ease;
             }
-            
+
             .chart-card:hover {
                 transform: translateY(-2px);
                 box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             }
-            
+
             canvas {
                 max-height: 300px !important;
             }
-            
+
             /* Compact Dashboard Styles */
             .compact-card {
                 margin-bottom: 1rem;
             }
-            
+
             .compact-card .card-header {
                 padding: 0.75rem 1rem;
                 border-bottom: 1px solid var(--border);
             }
-            
+
             .compact-card .card-body {
                 padding: 1rem;
             }
-            
+
             .compact-card .card-title {
                 font-size: 1rem;
                 margin-bottom: 0.5rem;
             }
-            
+
             .compact-stats {
                 padding: 0.75rem;
             }
-            
+
             .compact-stats .icon {
                 font-size: 1.5rem;
                 margin-bottom: 0.5rem;
                 padding: 0.5rem;
             }
-            
+
             .compact-stats h3 {
                 font-size: 1.5rem;
                 margin-bottom: 0.25rem;
             }
-            
+
             .compact-stats p {
                 font-size: 0.875rem;
                 margin-bottom: 0;
             }
-            
+
             .compact-list .list-group-item {
                 padding: 0.5rem 0;
                 border: none;
                 border-bottom: 1px solid var(--border);
             }
-            
+
             .compact-list .list-group-item:last-child {
                 border-bottom: none;
             }
-            
+
             .compact-table {
                 font-size: 0.875rem;
             }
-            
+
             .compact-table th,
             .compact-table td {
                 padding: 0.5rem 0.75rem;
                 vertical-align: middle;
             }
-            
+
             .compact-table .btn-sm {
                 padding: 0.25rem 0.5rem;
                 font-size: 0.75rem;
             }
-            
+
             .compact-badge {
                 font-size: 0.75rem;
                 padding: 0.25rem 0.5rem;
             }
-            
+
             .compact-text {
                 font-size: 0.875rem;
                 line-height: 1.4;
             }
-            
+
             .compact-section {
                 margin-bottom: 1.5rem;
             }
-            
+
             .compact-section h2 {
                 font-size: 1.25rem;
                 margin-bottom: 0.75rem;
             }
-            
+
             .compact-section h5 {
                 font-size: 1rem;
                 margin-bottom: 0.5rem;
             }
-            
+
             .compact-section h6 {
                 font-size: 0.875rem;
                 margin-bottom: 0.25rem;
             }
-            
+
             .compact-grid {
                 gap: 0.75rem;
             }
-            
+
             .compact-grid .col {
                 padding: 0.375rem;
             }
@@ -511,9 +511,9 @@
     <div class="sidebar" id="sidebar">
         <div class="p-4">
             <div class="d-flex align-items-center mb-4">
-                <h4 class="mb-0 text-primary fw-bold bangla-font">রিডসাইকেল</h4>
+                <h4 class="mb-0 fw-bold bangla-font" style="color: #0a6c3a">রিডসাইকেল</h4>
             </div>
-            
+
             <nav class="nav flex-column">
                 <a href="{{ route('dashboard.index') }}" class="nav-link {{ request()->routeIs('dashboard.index') ? 'active' : '' }}">
                     <i class="fas fa-home"></i>
@@ -550,7 +550,7 @@
                     </button>
                     <h5 class="mb-0">@yield('title', 'Dashboard')</h5>
                 </div>
-                
+
                 <div class="d-flex align-items-center gap-3">
                     <div class="dropdown">
                         <button class="btn btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown">
@@ -610,9 +610,9 @@
         document.addEventListener('click', function(event) {
             const sidebar = document.getElementById('sidebar');
             const sidebarToggle = document.getElementById('sidebarToggle');
-            
-            if (window.innerWidth <= 768 && 
-                !sidebar.contains(event.target) && 
+
+            if (window.innerWidth <= 768 &&
+                !sidebar.contains(event.target) &&
                 !sidebarToggle.contains(event.target)) {
                 sidebar.classList.remove('show');
             }
