@@ -86,7 +86,7 @@ ReadCycle provides a platform where students can:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/readcycle-laravel.git
+   git clone https://github.com/smensulaiman/readcycle-laravel.git
    cd readcycle-laravel
    ```
 
@@ -292,7 +292,7 @@ This project is developed for educational purposes as part of university coursew
 ## Contact
 
 For questions about this project, please contact:
-- Email: ibrahim@example.com
+- Email: ibrahim@ibrahimcodelab.com.com
 - University: North Western University, Khulna
 
 ---
