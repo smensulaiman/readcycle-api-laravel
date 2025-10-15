@@ -277,6 +277,10 @@ This is a university project, but suggestions and improvements are welcome. Plea
 - Department: Computer Science and Engineering
 - Project: ReadCycle - Book Sharing Platform
 
+**Mohammad Sulaiman**
+- Software Engineer
+- Project Advisor
+
 ## License
 
 This project is developed for educational purposes as part of university coursework. The code is available for learning and reference purposes.
