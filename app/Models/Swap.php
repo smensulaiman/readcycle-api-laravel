@@ -24,8 +24,8 @@ class Swap extends Model
         return $this->belongsTo(User::class, 'requester_id');
     }
 
-    public function offerer(): BelongsTo
+    public function getOffererAttribute()
     {
-        return $this->belongsTo(User::class, 'requester_id');
+        return $this->bookOffered->user;
     }
 }

@@ -1,6 +1,17 @@
 @extends('layouts.master')
 
 @section('content')
+    @if(session('success'))
+        <div class="container-xxl py-2">
+            <div class="container px-lg-5">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <i class="fa fa-check-circle me-2"></i>{{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            </div>
+        </div>
+    @endif
+
     <!-- Hero Start -->
     <div class="container-xxl bg-primary hero-header">
         <div class="container px-lg-5">
@@ -8,7 +19,14 @@
                 <div class="col-lg-8 text-center text-lg-start">
                     <h1 class="text-white mb-4 animated slideInDown">ReadCycle – Swap, read and repeat.</h1>
                     <p class="text-white pb-3 animated slideInDown">ReadCycle is an app designed to promote sustainable consumption by connecting book lovers with each other in their local community. With ReadCycle, users can trade or donate their gently used books with others, reducing their environmental impact and promoting sustainable practices.</p>
-                    <a href="" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                    @auth
+                        <a href="{{ route('dashboard.index') }}" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Go to Dashboard</a>
+                    @else
+                        <a href="{{ route('register') }}" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight me-3">Get Started</a>
+                        <a href="{{ route('login') }}" class="btn btn-outline-light py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight me-3">Login</a>
+                        <a href="{{ route('documentation') }}" class="btn btn-outline-light py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight me-3">Documentation</a>
+                        <a href="{{ route('swagger') }}" class="btn btn-outline-light py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">API Docs</a>
+                    @endauth
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
                     <div class="owl-carousel screenshot-carousel">

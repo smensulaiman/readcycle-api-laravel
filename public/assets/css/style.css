@@ -1,9 +1,20 @@
 /********** Template CSS **********/
+
+/* Bangla Font Integration */
+@font-face {
+    font-family: 'Bangla';
+    src: url('../fonts/bangla.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --primary: #0a6d3a;
     --secondary: #35875b;
     --light: #F0F6FF;
     --dark: #262B47;
+    --bangla-font: 'Bangla', 'Noto Sans Bengali', 'SolaimanLipi', 'Kalpurush', sans-serif;
 }
 
 
@@ -21,6 +32,16 @@
     opacity: 1;
 }
 
+
+/*** Bangla Font Classes ***/
+.bangla-font {
+    font-family: var(--bangla-font) !important;
+}
+
+.bangla-text {
+    font-family: var(--bangla-font) !important;
+    line-height: 1.6;
+}
 
 /*** Heading ***/
 h1,
